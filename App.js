@@ -5,7 +5,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Hello World</Text>
-      <Button title="Clique-me!"></Button>
     </View>
   );
 }
