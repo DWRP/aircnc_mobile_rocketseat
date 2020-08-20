@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - APP IDEA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="root">
+        <h1>APP IDEAS</h1>
+        <h3>Select Project:</h3>
+        <iframe class="iframe hidden"></iframe>
+        <div class="projects">
+            <button onclick="changeFrame('bin2dec')" class="button go">Binary To Decimal (Bin2Dec)</button>
+        </div>
+        <button onclick="list()" class="back button hidden">Voltar</button>
+    
+    </div>
+
+    <script defer>
+
+        const IFRAME = document.querySelector('.iframe')
+        const BACK_BUTTON = document.querySelector('.back')
+        const PROJECTS = document.querySelector('.projects')
+
+        function list(){
+            IFRAME.classList.add('hidden')
+            IFRAME.src = ''
+            BACK_BUTTON.classList.add('hidden')
+            PROJECTS.classList.remove('hidden')
+        }
+
+        function changeFrame(name){
+            IFRAME.src = `./bin/${name}/index.html`
+            IFRAME.classList.remove('hidden')
+            BACK_BUTTON.classList.remove('hidden')
+            PROJECTS.classList.add('hidden')
+        }
+    </script>
+</body>
+</html>
