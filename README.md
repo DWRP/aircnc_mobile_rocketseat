@@ -9,7 +9,8 @@ Base: <a href="https://github.com/florinpop17/app-ideas"> App Ideas </a> by <a h
 
 - Begginer
 
-    - [ ] Bin2Dec
+    - [X] Bin2Dec
+    - [ ] Border Radius Previewer
 
 - Intermediate
 
