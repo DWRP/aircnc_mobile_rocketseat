@@ -20,6 +20,7 @@ html, body, .container{
 
     justify-content: center;
     align-items: center;
+    color: #FFF;
 }
 
 input{
@@ -41,6 +42,7 @@ input{
     margin: 6px;
     padding: 4px;
 }
+
 .aviso{
     color: red;
     font-weight: bold;
