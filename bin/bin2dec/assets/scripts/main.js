@@ -23,19 +23,28 @@ window.onload = ()=>{
     BINARY.addEventListener('keyup',({target})=>{
         AVISO.className = "aviso hidden"
         
-        let {value} = target
-        
-        if(value.length > 8){
-            target.value = value.substring(0,8)
-        }else{
-            DECIMAL.value = converter(value)
-        }
-
-        if(Number(value.substring(value.length-1)) !== 1 && Number(value.substring(value.length-1)) !== 0){
+        function reset (){
             AVISO.classList.toggle('hidden')
             target.value = value.substring(0,value.length-1)
             DECIMAL.value = converter(target.value)
         }
 
+        let {value} = target
+        
+        if(value.length > 8){
+            target.value = value.substring(0,8)
+        }
+
+        if(value.substring(value.length-1) === '.'){
+            reset()
+            return
+        }
+
+        if((Number(value.substring(value.length-1)) !== 1 && Number(value.substring(value.length-1)) !== 0)){
+            reset()
+            return
+        }
+
+        DECIMAL.value = converter(value)
     })
 }
