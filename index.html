@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - APP IDEA</title>
+    <link rel="shortcut icon" href="./src/assets/images/icons/favicon.ico" type="image/x-icon">
+    <title>APP IDEAS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <script defer src="./src/assets/scripts/database.js"></script>
+    <script defer src="./src/assets/scripts/components.js"></script>
+    <script defer src="./src/assets/scripts/main.js"></script>
+
 </head>
 <body>
     <div class="root">
-        <h1>APP IDEAS</h1>
-        <h3>Select Project:</h3>
-        <iframe class="iframe hidden"></iframe>
-        <div class="projects">
-            <button onclick="changeFrame('bin2dec')" class="button go">Binary To Decimal</button>
-        </div>
-        <button onclick="list()" class="back button hidden">Back</button>
+        <header class="header">
+            <a href="/" class="logo links">
+                <h1 class="logo">APP IDEAS</h1>
+            </a>
+            <div class="social">
+                <a href="https://github.com/DWRP" target="_blank">
+                    <img class="github" src="./src/assets/images/image/GIT.png" alt="github">
+                </a>
+
+                <a href="https://linkedin.com/in/douglaswalas" target="_blank">
+                    <img class="linkedin" src="./src/assets/images/image/IN.png" alt="linkedin">
+                </a>
+
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="actions">
+                <button onclick="loadLeveis()" class="button back hidden">Back</button>
+            </div>
+            <iframe class="iframe hidden"></iframe>
+            <div class="cards">
+                
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright ©<a href="https://linkedin.com/in/douglaswalas" target="_blank" class="links">Douglas Walas</a></p>
+        </footer>
     
     </div>
 
-    <script defer>
-
-        const IFRAME = document.querySelector('.iframe')
-        const BACK_BUTTON = document.querySelector('.back')
-        const PROJECTS = document.querySelector('.projects')
-
-        function list(){
-            IFRAME.classList.add('hidden')
-            IFRAME.src = ''
-            BACK_BUTTON.classList.add('hidden')
-            PROJECTS.classList.remove('hidden')
-        }
-
-        function changeFrame(name){
-            IFRAME.src = `./bin/${name}/index.html`
-            IFRAME.classList.remove('hidden')
-            BACK_BUTTON.classList.remove('hidden')
-            PROJECTS.classList.add('hidden')
-        }
-    </script>
 </body>
 </html>

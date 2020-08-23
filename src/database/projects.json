@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Binary To Decimal",
+        "description": "Convert binary to decimal",
+        "image": "bin2dec.png",
+        "path": "bin2dec",
+        "level": "0"
+    }
+]
