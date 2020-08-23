@@ -199,8 +199,16 @@ button, input, textarea{
 }
 
 .back{
-    background: rgb(80, 11, 2);
+    border-radius: 0;
+    border-bottom-right-radius: 8px; 
+    background: #FF0606;
     color: white;
+}
+
+@media (max-width:720px){
+    .footer{
+        flex-direction: column;
+    }
 }
 
 /* ANIMATIONS */
