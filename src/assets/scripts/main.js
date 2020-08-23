@@ -26,8 +26,9 @@ const LEVEIS = [
 
 
 function changeFrame(name){
-    console.log(name)
-    IFRAME.src = `./src/projects/${name}/index.html`
+    const [level] = LEVEIS.filter(item=>item.index === ATUAL_LEVEL)
+    
+    IFRAME.src = `./src/projects/${level.level}/${name}/index.html`
     IFRAME.classList.remove('hidden')
     BACK_BUTTON.classList.remove('hidden')
     CARDS.classList.add('hidden')

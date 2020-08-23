@@ -70,6 +70,11 @@ html, body, .root{
     color: white;
 }
 
+.links:hover{
+    opacity: .6;
+    color: rgb(38, 233, 48);
+}
+
 .main{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -126,7 +131,7 @@ html, body, .root{
     cursor: pointer;
 }
 
-.card_projects:hover, .card_leveis img:hover{
+.card_projects img:hover, .card_leveis img:hover{
     transform: translateZ(-1);
     animation: 1s balance;
 }
@@ -153,6 +158,7 @@ html, body, .root{
     display: flex;
     flex-direction: row;
 
+    justify-content: space-between;
     align-items: center;
 
     padding: 0 12px;
@@ -197,14 +203,15 @@ button, input, textarea{
     color: white;
 }
 
-
 /* ANIMATIONS */
 @keyframes balance{
     from {
-        opacity: .1;
+        width: 85%;
+        height: 85%;
     }
 
     to {
-        opacity: 1;
+        width: 100%;
+        height: 100%;
     }
 }
