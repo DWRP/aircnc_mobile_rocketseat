@@ -1,0 +1,119 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+html, body, .container{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    background: #000;
+    color: #FFF;
+}
+
+.contant{
+    margin-top: 50px;
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center; 
+}
+
+.top, .bottom{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+.left, .right{
+    width: 30px;
+    height: 30px;
+}
+
+.box{
+    width: 80%;
+    height: 80%;
+    background: red;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.type_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.size .width, .size .height{
+    margin: 4px;
+}
+
+.size_input{
+    width: 50px;
+    height: 35px;
+}
+
+.type_button{
+    border: none;
+    border-radius: 4px;
+
+    background: #444;
+    color: #FFF;
+    
+    font-size: 1.1rem;
+
+    padding: 8px;
+    margin: 4px;
+
+    cursor: pointer;
+
+}
+.type_button:hover{
+    background: rgb(189, 189, 189);
+    color: #000;
+}
+
+.active{
+    background: rgb(42, 253, 0);
+    color: black;
+}
+.active:hover{
+    background: rgb(42, 253, 0);
+}
+
+.hidden{
+    visibility: hidden;
+}

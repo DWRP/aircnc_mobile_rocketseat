@@ -5,5 +5,13 @@
         "image": "bin2dec.png",
         "path": "bin2dec",
         "level": "0"
+    },
+    {
+        "name": "Border Radius Previewer",
+        "description": "Select Border Radius and Previewer",
+        "image": "border-radius-previewer.png",
+        "path": "border-radius-previewer",
+        "level": "0"
+
     }
 ]
