@@ -13,5 +13,13 @@
         "path": "border-radius-previewer",
         "level": "0"
 
+    },
+    {
+        "name": "Calculator",
+        "description": "Simple Calculator in Javascript",
+        "image": "calculator.png",
+        "path": "calculator",
+        "level": "0"
+
     }
 ]

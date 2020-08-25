@@ -1,0 +1,96 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+html, body, .container{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    background: #000;
+    color: #FFF;
+}
+input {
+    width: 100%;
+    height: 6vh;
+
+    border-radius: 6px;
+}
+
+.calc button{
+    border: none;
+    border-radius: 6px;
+
+    margin: 2px;
+
+    background: tomato;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.calc button:hover{
+    transition: .5s all;
+    background: rgb(78, 11, 78);
+}
+
+.calc{
+    max-width: 360px;
+    max-height: 640px;
+
+    width: 100%;
+}
+
+.definitions{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.definitions button, .operators button, .line button{
+    width: 95%;
+    height: 6vh;
+}
+
+.dpad{
+    display: flex;
+    flex-direction: row;
+}
+
+.operators{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nums{
+    width: 75%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+}
