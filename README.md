@@ -12,7 +12,7 @@ Base: <a href="https://github.com/florinpop17/app-ideas"> App Ideas </a> by <a h
 
     - [X] Bin2Dec
     - [X] Border Radius Previewer
-
+    - [X] Calculator
 - Intermediate
 
     - [ ] None
