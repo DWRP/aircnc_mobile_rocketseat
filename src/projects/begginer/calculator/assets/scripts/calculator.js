@@ -10,8 +10,8 @@ class Calc{
             "/" : this.div
         }
         this.data = {
-            preview : null,
-            current : null,
+            preview_calc : null,
+            string_calc : null,
             operator : null
         }
     }
@@ -52,15 +52,33 @@ class Calc{
             return ""
         }
         else if(type === "CE"){
-            this.data.preview = null
+            this.data.string_calc = null
             return ""
         }
         else if(type === "←" || type === "Backspace"){
             return data.substring(0,data.length-1)
         }
     }
+
+
     calculate(){
-        console.log(this.data.operator)
-        return `${this.data.operator(Number(this.data.preview),Number(this.data.current))}`
+        let preview = 0
+        let current = 0
+        let result
+        let operation = null
+
+        this.data.string_calc.split('').forEach(item=>{
+            if(!isNaN(item)){
+                if(operation){
+                    current += Number(item)
+                }else{
+                    preview += Number(item)
+                }
+            }else{
+                operation = this.opertions[item]
+            }
+        })
+        result = operation(preview,current)
+        return result
     }
 }
